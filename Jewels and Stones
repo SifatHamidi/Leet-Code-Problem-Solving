@@ -1,0 +1,11 @@
+class Solution:
+    def numJewelsInStones(self, jewels, stones):
+        i=0
+        count_jewels=0
+        while(i<len(jewels)):
+            if jewels[i] in stones:
+                count_jewels=count_jewels+stones.count(jewels[i])
+            i=i+1
+        return count_jewels
+ob1 = Solution()
+print(ob1.numJewelsInStones("tUbAX","ABtuRtvX"))
